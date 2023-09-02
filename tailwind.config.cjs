@@ -11,6 +11,7 @@ module.exports = {
         tertiary: "#725130",
         txtcolor: "#2d2d2d",
         txtcolorold: "#222222",
+        txtcolormenu: "#333333",
         txtcoloroncard: "#dddddd",
         txtcolorhighlight: "#915EFF",
         headcoloroncard: "#eeeeee",
