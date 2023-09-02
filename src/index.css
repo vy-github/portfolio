@@ -230,3 +230,13 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+.animated-btn {
+  background-image: linear-gradient(135deg, #5e1483 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: all 300ms ease-in-out;
+}
+.animated-btn:hover {
+  background-position: 0;
+}
