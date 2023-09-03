@@ -164,7 +164,10 @@ const experiences = [
     icon: newtonschoollogo,
     iconBg: "#E6DEDD",
     date: "Mar 2021 - Sep 2021",
-    points: [""],
+    points: [
+      "Here, I got a thorough understanding of the MERN stack in detail which is all about building web applications.",
+      "But what really helped me on my journey was the chance to practice job interviews with mock sessions that matched my skills. It gave me a great head start in my career.",
+    ],
   },
   {
     title: "Master of Computer Applications (CSE)",
@@ -173,7 +176,11 @@ const experiences = [
     icon: ghrietlogo,
     iconBg: "#383E56",
     date: "Aug 2018 - June 2021",
-    points: [""],
+    points: [
+      "During the masters I dedicated a significant amount of time to honing my skills in web development. The pandemic presented unique challenges including a break from college activities, but I used this time wisely to continue my educational and professional growth.",
+      "In addition to my academic preparations, I devoted a significant portion of my time to coding and practice. This proactive approach allowed me to deepen my understanding of computer application concepts and improve my coding skills.",
+      "Overall, my post-graduation journey was marked by a strong commitment and the opportunity to share my knowledge and skills through presentations on projects like the Biometric Attendance and Event Reminder projects.",
+    ],
   },
   {
     title: "BCCA (CSE)",
@@ -181,7 +188,11 @@ const experiences = [
     icon: maniarlogo,
     iconBg: "#E6DEDD",
     date: "July 2014 - June 2017",
-    points: [""],
+    points: [
+      "While I was in college, I actively took part in a bunch of competitions both within our college and inter colleges. These competitions were all about presenting different projects. I really enjoyed them and I managed to collect quite a few certificates along the way. It was a fun and rewarding experience!",
+      "I also got into physical and non physica games like playing cricket, badminton, chess and many more. It kept me active and taught me teamwork and sportsmanship.",
+      "In a nutshell, my college life was about more than just books. It was a mix of creativity, physical activity, and strategic thinking, giving me a well-rounded education.",
+    ],
   },
 ];
 

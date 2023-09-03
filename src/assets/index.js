@@ -36,6 +36,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import watch from "./illustrator/Apple_Watch_Laying_R.png";
+import macbook from "./illustrator/Macbook_Pro_Half_Closed_Front_L Shadowless.png";
+import ipad from "./illustrator/iPad_Laying_R.png";
+
 export {
   logo,
   backend,
@@ -71,4 +75,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  watch,
+  macbook,
+  ipad,
 };
