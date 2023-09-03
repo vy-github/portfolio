@@ -30,6 +30,14 @@ import {
   threejs,
 } from "../assets";
 
+export const cvLink =
+  "https://drive.google.com/file/d/1sJTddvcdVUPrtejIb-s-JVwOW7b_jlrQ/view?usp=drive_link";
+
+export const socialLinks = [
+  { name: "LinkedIn", link: "https://www.linkedin.com/in/vaibhav-yeole" },
+  { name: "Github", link: "https://github.com/vy-github" },
+];
+
 export const navLinks = [
   {
     id: "about",

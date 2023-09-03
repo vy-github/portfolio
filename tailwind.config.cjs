@@ -31,6 +31,9 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "#dbd7c4",
       },
+      fontFamily : {
+        'montserrat': ["Montserrat", "sans-serif"]
+      }
     },
   },
   plugins: [],

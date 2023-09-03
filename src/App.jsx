@@ -32,9 +32,9 @@ const App = () => {
           <Tech />
           <Works />
           {/* <Feedbacks /> */}
-          <div className="relative z-0">
+          <div className="relative z-0 bg-[#262223] mt-12">
             <Contact />
-            <StarsCanvas />
+            {/* <StarsCanvas /> */}
           </div>
         </div>
       </div>

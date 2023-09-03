@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { socialLinks } from "../constants";
+import contants from "../contants";
 
 const Contact = () => {
   const formRef = useRef();
@@ -33,16 +35,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        contants.EMAILJS_SERVICE_ID,
+        contants.EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Vaibhav yeole",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "jametem795@xgh6.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        contants.EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -66,68 +68,105 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`lg:mt-[-15px] flex lg:flex-row flex-col lg:gap-10 gap-4 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className="flex flex-col lg:h-auto lg:p-8 p-0 pb-10 lg:w-1/2 w-full border-b lg:border-r lg:border-b-0 border-[#666]"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-txtcolor font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-txtcolor rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-txtcolor font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-txtcolor rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-txtcolor font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-txtcolor rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-txtcolor font-bold shadow-md shadow-primary'
+        {/* <p className={styles.sectionSubText}>Get in touch</p> */}
+        <h3 className={`${styles.sectionHeadText} text-txtcoloroncard`}>
+          Contact Me!
+        </h3>
+        <div className="relative flex flex-col flex-1 md:pt-10 pt-4 gap-3">
+          <p
+            className={`text-[#bbb] text-[16px] pl-1 tracking-wider font-montserrat`}
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+            Email:{" "}
+            <a
+              href="mailto:support@newtonschool.co"
+              className="underline font-montserrat"
+            >
+              vaibhav.yeole159@gmail.com
+            </a>
+          </p>
+          <p
+            className={`text-[#bbb] text-[16px] pl-1 tracking-wider font-montserrat`}
+          >
+            Find me on:{" "}
+            {socialLinks.map((socialLink, idx) => {
+              return (
+                <>
+                  <a
+                    href={socialLink.link}
+                    target="_blank"
+                    className={"underline font-montserrat cursor-pointer"}
+                  >
+                    {socialLink.name}
+                  </a>
+                  {idx !== socialLinks?.length - 1 && (
+                    <span className="font-montserrat mx-1 text-[#aaa]">/</span>
+                  )}
+                </>
+              );
+            })}
+          </p>
+
+          <p className="mt-auto lg:block hidden">© 2022 by Vaibhav Yeole </p>
+        </div>
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className="flex flex-1 lg:w-1/2 w-full"
       >
-        <EarthCanvas />
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="mt-8 w-full flex flex-col gap-3"
+        >
+          <label className="flex flex-col">
+            {/* <span className="text-headcoloroncard font-medium mb-4">Your Name</span> */}
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Name"
+              className="bg-tertiary py-4 px-6 placeholder:text-txtcoloroncard text-headcoloroncard rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            {/* <span className="text-headcoloroncard font-medium mb-4">Your email</span> */}
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="Email"
+              className="bg-tertiary py-4 px-6 placeholder:text-txtcoloroncard text-headcoloroncard rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            {/* <span className="text-headcoloroncard font-medium mb-4">Your Message</span> */}
+            <textarea
+              rows={7}
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="Your Message"
+              className="bg-tertiary py-4 px-6 placeholder:text-txtcoloroncard text-headcoloroncard rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+
+          <button
+            type="submit"
+            className="animated-btn flex justify-center items-center m-0 h-10 w-full text-[#eee] bg-[#5e1483] font-black text-[16px] font-semibold rounded
+            hover:bg-[#915EFF] hover:border hover:border-[#915EFF] hover:tracking-wider"
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
+        </form>
       </motion.div>
     </div>
   );
