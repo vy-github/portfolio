@@ -68,11 +68,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`lg:mt-[-15px] flex lg:flex-row flex-col lg:gap-10 gap-4 overflow-hidden`}
+      className={`relative lg:mt-[-15px] flex lg:flex-row flex-col lg:gap-10 gap-4 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex flex-col lg:h-auto lg:p-8 p-0 pb-10 lg:w-1/2 w-full border-b lg:border-r lg:border-b-0 border-[#666]"
+        className="flex flex-col lg:h-auto lg:p-8 p-0 pb-10 lg:w-1/2 w-full"
       >
         {/* <p className={styles.sectionSubText}>Get in touch</p> */}
         <h3 className={`${styles.sectionHeadText} text-txtcoloroncard`}>
@@ -115,6 +115,10 @@ const Contact = () => {
           <p className="mt-auto lg:block hidden">© 2022 by Vaibhav Yeole </p>
         </div>
       </motion.div>
+
+      {/* <div className="absolute lg:top-0 top-[-192px] lg:left-1/2 left-[0px] w-[2px] lg:h-[88%] h-[100%] lg:rotate-0 rotate-90 lg:my-9 my-0 bg-[#666]"></div> */}
+      <div className="lg:flex hidden absolute top-0 left-1/2 w-[2px] h-full bg-[#666]"></div>
+      <div className="lg:hidden flex absolute md:top-[210px] sm:top-[185px] top-[155px] left-0 w-full h-[2px] bg-[#666]"></div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
