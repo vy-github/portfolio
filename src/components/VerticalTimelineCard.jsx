@@ -7,15 +7,32 @@ import { styles } from "../styles";
 const VerticalTimelineCard = ({ experience }) => {
   return (
     <>
-      <div className="relative flex justify-between z-10">
+      <div className="relative flex justify-between gap-3 z-10">
         <h3 className={styles.cardHeadText}>{experience.title}</h3>
         {experience.date && (
           <span
-            className="vertical-timeline-element-date"
+            className="vertical-timeline-element-date md:text-base text-xs"
             style={{ padding: 0 }}
           >
             {experience.date}
           </span>
+        )}
+
+        {experience?.source_code_link && (
+          <div className="relative inset-0 flex justify-end card-img_hover z-0">
+            <div
+              onClick={() =>
+                window.open(experience?.source_code_link, "_blank")
+              }
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={github}
+                alt="source code"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+          </div>
         )}
       </div>
       {experience.company_name && (
@@ -34,21 +51,6 @@ const VerticalTimelineCard = ({ experience }) => {
           </li>
         ))}
       </ul>
-
-      {experience?.source_code_link && (
-        <div className="absolute inset-0 flex justify-end m-3 card-img_hover z-0">
-          <div
-            onClick={() => window.open(experience?.source_code_link, "_blank")}
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-          >
-            <img
-              src={github}
-              alt="source code"
-              className="w-1/2 h-1/2 object-contain"
-            />
-          </div>
-        </div>
-      )}
 
       {experience?.tags && (
         <div className="flex flex-wrap gap-2 m-[23px] ml-6 md:m-0 md:ml-[23px]">

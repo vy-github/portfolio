@@ -12,8 +12,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 780) {
+      // const scrollTop = window.scrollY;
+      const element = document.querySelector(".aboutsection-head");
+      if (element.getBoundingClientRect().top < 110) {
         setScrolled(true);
       } else {
         setScrolled(false);
