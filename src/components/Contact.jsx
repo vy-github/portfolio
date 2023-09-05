@@ -207,7 +207,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="flex flex-1 lg:w-1/2 w-full"
       >
-        <form ref={formRef} className="mt-8 w-full flex flex-col gap-3">
+        <form ref={formRef} className="mt-8 mb-4 w-full flex flex-col gap-3">
           <label className="flex flex-col">
             {/* <span className="text-headcoloroncard font-medium mb-4">Your Name</span> */}
             <input
