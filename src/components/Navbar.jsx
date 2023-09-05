@@ -45,7 +45,7 @@ const Navbar = () => {
   const DownloadCVBtn = ({ displayStatus }) => {
     return (
       <button
-        class={`animated-btn ${displayStatus} justify-center items-center m-0 h-10 w-40 text-[#eee] bg-[#5e1483] font-black text-[16px] font-semibold rounded
+        className={`animated-btn ${displayStatus} justify-center items-center m-0 h-10 w-40 text-[#eee] bg-[#5e1483] font-black text-[16px] font-semibold rounded
         hover:bg-[#915EFF] hover:border hover:border-[#915EFF] hover:tracking-wider`}
         onClick={() => window.open(cvLink, "_blank")}
       >
