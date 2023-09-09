@@ -195,7 +195,7 @@ const Contact = () => {
             })}
           </div>
 
-          <p className="mt-auto lg:block hidden">© 2022 by Vaibhav Yeole </p>
+          <p className="mt-auto lg:block hidden">© 2023 by Vaibhav Yeole </p>
         </div>
       </motion.div>
 
