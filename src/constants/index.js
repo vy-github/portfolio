@@ -31,7 +31,7 @@ import {
 } from "../assets";
 
 export const cvLink =
-  "https://drive.google.com/file/d/1sJTddvcdVUPrtejIb-s-JVwOW7b_jlrQ/view?usp=drive_link";
+  "https://drive.google.com/file/d/1JfP4BiB7HXKwCUmqT2NSD6P-cycCVVrj/view?usp=drive_link";
 
 export const socialLinks = [
   { name: "LinkedIn", link: "https://www.linkedin.com/in/vaibhav-yeole" },
