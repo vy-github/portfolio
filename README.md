@@ -1,3 +1,2 @@
 # Portfolio deployed here
-- https://vy-github.github.io/portfolio/
-![Portfolio](https://i.yourimageshare.com/HaMVCXUWxi.webp)
+[<img src="https://i.yourimageshare.com/HaMVCXUWxi.webp">](https://vy-github.github.io/portfolio/)
