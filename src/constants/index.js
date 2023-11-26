@@ -6,6 +6,7 @@ import {
   javascript,
   typescript,
   java,
+  nextjs,
   python,
   html,
   css,
@@ -114,8 +115,8 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "Java",
-    icon: java,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Python",

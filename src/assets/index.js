@@ -26,6 +26,7 @@ import java from "./tech/java.svg";
 import python from "./tech/python.svg";
 import threejs from "./tech/threejs.svg";
 import csharp from "./tech/csharp.svg";
+import nextjs from "./tech/nextjs.png";
 
 import maniarlogo from "./company/maniarlogo.png";
 import ghrietlogo from "./company/ghrietlogo.webp";
@@ -65,6 +66,7 @@ export {
   tailwind,
   typescript,
   java,
+  nextjs,
   python,
   csharp,
   threejs,
